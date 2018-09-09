@@ -55,7 +55,7 @@ export default class Docker {
     }
     const defaultVars = this.getDockerEnvVars()
     const portfinder = require('portfinder')
-    port = port || await portfinder.getPortPromise({ port: 60000 })
+    port = port || await portfinder.getPortPromise({ port: 80 })
     FUNCTIONS_PORT = FUNCTIONS_PORT || String(await portfinder.getPortPromise({ port: 60050 }))
     const customVars = {
       PORT: String(port),
