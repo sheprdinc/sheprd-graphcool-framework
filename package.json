@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "cd cli/packages/graphcool-cli node dist/index.js local up",
+    "stop": "cd cli/packages/graphcool-cli node dist/index.js local stop"
+  },
   "dependencies": {
     "docs-cli": "^1.0.25",
     "global": "^4.3.2"
